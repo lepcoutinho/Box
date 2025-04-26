@@ -2,23 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 section.Music {
-    //border: 1px solid red;
     height: 100%;
     width: 100%;
     display: flex;
 
-
     div.Disc {
-        
+
         height: 100%;
         width: 40%;
         display: flex;
         align-items: center;
         overflow: hidden;
-        
+
 
         img.DiscPlay {
-            
+
             height: 920px;
             width: 920px;
             position: absolute;
@@ -27,7 +25,7 @@ section.Music {
         }
 
         img.DiscPause {
-            
+
             height: 920px;
             width: 920px;
             position: absolute;
@@ -35,9 +33,7 @@ section.Music {
         }
 
         .ImgMusic {
-            //border:1px solid black;
             position: absolute;
-            //top: 232px;
             left: -45px;
             height: 270px;
             width: 270px;
@@ -48,10 +44,8 @@ section.Music {
                 background-color: #e6e6e6;
                 display: block;
                 position: absolute;
-                //z-index: 10;
                 left: 120px;
                 top: 120px;
-                //right: 10px;
                 height: 30px;
                 width: 30px;
                 border-radius: 50px;
@@ -70,7 +64,7 @@ section.Music {
             margin-top: 80px;
             //height: 230px;
 
-            
+
             h2 {
                 font-family: "Boldonse", system-ui;
                 font-size: 3em;
@@ -93,32 +87,6 @@ section.Music {
             }
         }
 
-        div.Progress {
-            height: 40px;
-            display: flex;
-            align-items: center;
-
-            div.Barra {
-                background-color: #c9c9c9;
-                height: 25px;
-                width: 100%;
-                border-radius: 10px 0px 0px 10px;
-                overflow: hidden;
-
-                span {
-                    background-color: #272727;
-                    border-radius: 10px 0px 0px 10px;
-                    display: block;
-                    border: 1px solid black;
-                    height: 100%;
-                    //width: 50%;
-                    box-shadow: 0px 0px 10px black;
-                }
-            }
-        }
-
-
-
         div.Fila {
             border-top: 1px solid rgb(170, 170, 170);
             margin-right: 50px;
@@ -126,16 +94,16 @@ section.Music {
             padding-left: 20px;
             text-align: left;
 
-      h2{
-        display: block;
-        color:rgb(44, 44, 44);
-        text-transform: uppercase;
-        margin: -20px auto 0px auto;
-        width: 65px;
-        height: 30px;
-        text-align: center;
-        background-color:#dddddd;
-      }
+            h2 {
+                display: block;
+                color: rgb(44, 44, 44);
+                text-transform: uppercase;
+                margin: -24px auto 0px auto;
+                width: 65px;
+                height: 30px;
+                text-align: center;
+                background-color: #dddddd;
+            }
 
             p {
                 font-size: 14pt;

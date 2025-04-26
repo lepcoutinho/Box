@@ -3,7 +3,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../context/appContext";
 
-import NowPlay from "../components/music/music";
+import NowPlay from "../components/music/NowPlay";
 
 const login = () => {
   window.location.href = "/api/login";
