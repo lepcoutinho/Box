@@ -21,7 +21,7 @@ section.Music {
             width: 920px;
             position: absolute;
             margin-left: -370px;
-            animation: girar 7s linear infinite;
+            animation: girar 13s linear infinite;
         }
 
         img.DiscPause {
@@ -73,7 +73,6 @@ section.Music {
                 font-style: normal;
                 display: -webkit-box;
                 -webkit-line-clamp: 1;
-                /* Número de linhas a mostrar */
                 -webkit-box-orient: vertical;
                 overflow: hidden;
             }

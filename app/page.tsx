@@ -1,5 +1,5 @@
 import Image from "next/image";
-import NowPlay from "./components/music/music";
+import NowPlay from "./components/music/NowPlay";
 
 
 

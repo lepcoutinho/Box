@@ -4,19 +4,26 @@ import style from "./style.module.scss";
 import Image from "next/image";
 
 import ImgDisc from "../../img/disc.png"
-import { Key, useEffect, useState } from "react";
+import { Key, useEffect, useMemo, useState } from "react";
+
+interface Track {
+  id: string;
+  name: string;
+  artists: { name: string }[];
+  album: { images: { url: string }[] };
+}
 
 function NowPlay({ token }: { token: string }) {
   const [id, setId] = useState<string | undefined>();
-  const [item, setItem] = useState<any>({});
+  const [item, setItem] = useState<Track | null>(null);
   const [playing, setPlaying] = useState<boolean | undefined>();
   const [capa, setCapa] = useState<string | undefined>();
-  const [queue, setQueue] = useState<any>();
+  const [queue, setQueue] = useState<Track | null>(null);
 
   let artists: any;
   let labelArtists;
 
-  const Authorization = `Bearer ${token}`;
+  const Authorization = useMemo(() => `Bearer ${token}`, [token]);
 
   useEffect(() => {
     const intervalo = setInterval(() => {

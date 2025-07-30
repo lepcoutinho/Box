@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+section.Books {
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    section.Book {
+        //border: 1px solid black;
+        width: 40%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            //border: 1px solid black;
+            height: 500px;
+            width: 350px;
+            box-shadow: 0px 0px 10px black;
+        }
+
+        div{
+            border:1px solid black;
+            position: absolute;
+            bottom: 15%;
+            left:30%;
+            height: 95px;
+            width: 250px;
+        }
+    }
+
+    section.Trechos {
+        //border: 1px solid black;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div.SlideTrecho {
+            //border: 1px solid black;
+            width: 80%;
+            padding: 15px;
+
+            color: black;
+            font-size: 25pt;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+    }
+}
